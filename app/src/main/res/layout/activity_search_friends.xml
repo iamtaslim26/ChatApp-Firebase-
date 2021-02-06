@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFriendsActivity">
+
+    <RelativeLayout
+        android:id="@+id/r5"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/Search_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search"
+            android:background="@drawable/inputs"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:padding="19dp"
+            android:textColorHint="@color/colorPrimaryDark"/>
+
+        <Button
+            android:id="@+id/search_product_item"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:text="Search"
+            android:textAllCaps="true"
+            android:textColor="@color/cardview_shadow_start_color"/>
+
+
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/r5"/>
+
+</RelativeLayout>
